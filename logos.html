@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .logo-container {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #306998; /* Python blue color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate 3s linear infinite; /* Adjust animation duration as needed */
+    }
+
+    .python-logo {
+      width: 80px;
+      fill: #fff; /* Logo color */
+    }
+  </style>
+  <title>Python Animated Logo</title>
+</head>
+<body>
+
+  <div class="logo-container">
+    <!-- Replace the path data with the actual Python logo SVG path data -->
+    <svg class="python-logo" xmlns="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdnl.iconscout.com%2Flottie%2Fpremium%2Fthumb%2Fpython-9179521-7502212.gif&tbnid=L6HLmzWqWoiKGM&vet=12ahUKEwj_xKi1kJ-EAxXicWwGHT22D0QQMygIegQIARBo..i&imgrefurl=https%3A%2F%2Ficonscout.com%2Flottie-animation%2Fpython-6874924&docid=Zip7tO6cIK7SrM&w=352&h=352&q=python%20logo%20animation&ved=2ahUKEwj_xKi1kJ-EAxXicWwGHT22D0QQMygIegQIARBo" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h2v2h-4v-6z"/>
+    </svg>
+  </div>
+
+</body>
+</html>

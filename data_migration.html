@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Data_Migration</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <style>
+        /* Custom styling for the nav section */
+        #nav {
+            background-color: #333; /* Dark background color */
+            padding: 5px; /* Padding around the content */
+            text-align: center; /* Center the content */
+            box-shadow: 0 0 10px rgba(247, 244, 244, 0.1); /* Box shadow for a subtle lift */
+        }
+
+        button {
+            background-color: #fdfdfd; /* Green background color for the button */
+            color: white; /* White text color for the button */
+            padding: 10px 15px; /* Padding inside the button */
+            font-size: 20px; /* Font size of the button text */
+            border: none; /* Remove button border */
+            cursor: pointer; /* Add pointer cursor on hover */
+            border-radius: 5px; /* Add rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        button:hover {
+            background-color: transparent; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">chandra sekhar</a>
+			</header>
+            <!-- Nav -->
+            <nav id="nav">
+                <div style=>
+                    <button onclick="history.back()">Go Back</button>
+                <div>
+            </nav>
+            
+    
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="major">
+						<h1>Data Migration</h1>
+						<p><strong>In this project we build complex flows using Mulesoft to migrate data from MYSQL to Salesforce.</strong></p>
+					</header>
+					<div class="image main">
+						<img src="images/sfdb_1.jpg" alt="data migration image" />
+					</div>
+					<p>As a part of my training we have done a project which involves MYSQL & SALESFORCE by using MULESOFT.</p>
+					<body>
+
+                        <h2>Introduction</h2>
+                        <p>The MuleSoft application is designed to facilitate the integration between Salesforce and MySQL databases. It handles incoming API requests, performs data retrieval from MySQL, and supports data submission to Salesforce. The application follows best practices for error handling, logging, and data transformation.</p>
+                    
+                        <h2>Configuration</h2>
+                    
+                        <h3>Namespaces</h3>
+                        <p>The application utilizes various XML namespaces for MuleSoft modules, including API Gateway, Salesforce, Database, HTTP, and others. These namespaces define the modules and features used in the application.</p>
+                    
+                        <h3>Configurations</h3>
+                    
+                        <h4>HTTP Listener Config:</h4>
+                        <p>Configuration for an HTTP listener with the name "sf-mysql-integration-httpListenerConfig," listening on host "0.0.0.0" and port "8082."</p>
+                    
+                        <h4>APIKit Config:</h4>
+                        <p>Configuration for APIKit with the name "sf-mysql-integration-config," referencing an API specification file ("sf-mysql-integration.raml").</p>
+                    
+                        <h4>Database Config:</h4>
+                        <div class="image main">
+                            <img src="images/mysql_config.jpg" alt="mysql_configuration" style="max-width: 100%; height: auto;">
+                        </div>
+                        <p>Configuration for MySQL database connection with the name "Database_Config," specifying connection details such as host, port, user, password, and database.</p>
+                    
+                        <h4>Salesforce Config:</h4>
+                        <div class="image main">
+    <img src="images/salesforce_config.jpg" alt="salesforce_configuration" style="max-width: 100%; height: auto;">
+</div>
+                        <p>Configuration for Salesforce connection with the name "Salesforce_Config," providing Salesforce credentials and security token.</p>
+                    
+                        <h4>Autodiscovery:</h4>
+                        <p>API Gateway autodiscovery configuration with an API ID and flow reference to "sf-mysql-integration-main."</p>
+                    
+                        <h4>HTTP Request Config:</h4>
+                        <p>Configuration for making HTTP requests to "sfdb.us-e2.cloudhub.io" with the name "HTTP_Request_configuration."</p>
+                    
+                        <h2>Flows</h2>
+                    
+                        <h3>Main Flow: sf-mysql-integration-main</h3>
+                        <p>The main flow handles incoming API requests, routes them using APIKit, and includes error handling. It serves as the entry point for the application.</p>
+                    
+                        <h3>Console Flow: sf-mysql-integration-console</h3>
+                        <p>This flow is configured to serve the API console, providing a user-friendly interface for exploring and testing the API.</p>
+                    
+                        <h3>Data Retrieval Flow: get:\contacts:sf-mysql-integration-config</h3>
+                        <p>This flow performs asynchronous data retrieval from the MySQL "contacts" table and transforms the data into a specified JSON format.</p>
+                    
+                        <h3>Data Submission Flow: post:\submit:sf-mysql-integration-config</h3>
+                        <p>This flow handles data submission to Salesforce. It includes transformations and utilizes the Salesforce create operation.</p>
+                    
+                        <h2>Components</h2>
+                    
+                        <h3>HTTP Listener Config</h3>
+                        <p>The HTTP listener configuration specifies the host and port on which the application listens for incoming API requests.</p>
+                    
+                        <h3>APIKit Config</h3>
+                        <p>APIKit configuration defines the integration with RAML-based APIs. The configuration includes the name, API specification file reference, and other settings.</p>
+                    
+                        <h3>Database Config</h3>
+                        <p>Database configuration contains details for connecting to the MySQL database, such as host, port, user, password, and database name.</p>
+                    
+                        <h3>Salesforce Config</h3>
+                        <p>Salesforce configuration includes credentials and security token for establishing a connection to Salesforce.</p>
+                    
+                        <h3>Autodiscovery</h3>
+                        <p>API Gateway autodiscovery configuration allows the automatic discovery of APIs, enhancing the application's modularity and maintainability.</p>
+                    
+                        <h3>HTTP Request Config</h3>
+                        <p>HTTP request configuration specifies the details for making HTTP requests, including the host to which requests are made.</p>
+                    
+                        <h3>Transformations</h3>
+                        <p>The application utilizes DataWeave transformations to convert data between different formats, ensuring compatibility between systems.</p>
+                    
+                        <h3>Logger</h3>
+                        <p>Log statements are strategically placed using the logger component to provide insights into the application's execution and facilitate troubleshooting.</p>
+                    
+                        <h2>Error Handling</h2>
+                        <p>The application includes an error-handler section that handles various APIKIT error types, providing meaningful error messages and appropriate HTTP statuses.</p>
+                    
+                        <h2>Deployment</h2>
+                        <p>Instructions for deploying the MuleSoft application to the desired runtime environment, ensuring proper configurations and dependencies are met.</p>
+                    
+                        <h2>Testing</h2>
+                        <p>Guidelines for testing the application, including unit testing, integration testing, and API testing, to ensure functionality and performance.</p>
+                    
+                        <h2>Monitoring</h2>
+                        <p>Recommendations for monitoring the application in production, including key performance indicators, logging, and alerting mechanisms.</p>
+                    
+                        <h2>Troubleshooting</h2>
+                        <p>A troubleshooting guide for common issues and challenges that may arise during the development, deployment, or operation of the application.</p>
+                    
+                        <h2>Conclusion</h2>
+                        <p>A summary of the MuleSoft application, acknowledging its purpose, features, and potential areas for improvement. Additionally, contact information for support and further inquiries.</p>
+                    
+                    </body>
+				<!-- Pushback Button -->
+				<div style="text-align: center; margin-top: 20px;">
+                    <button onclick="history.back()">Go Back</button>
+                </div>
+
+			</div>
+		</div>
+	</body>
+</html>
