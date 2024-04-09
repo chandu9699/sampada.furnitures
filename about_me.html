@@ -46,12 +46,14 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
+      overflow-x: auto; /* Enable horizontal scroll for small screens */
     }
 
     th, td {
       border: 1px solid #ddd;
       padding: 12px;
       text-align: left;
+      white-space: nowrap; /* Prevent line breaks within table cells */
     }
 
     th {
@@ -100,36 +102,38 @@
 
   <section class="education">
     <h2>Education</h2>
-    <table>
-      <tr>
-        <th>Qualification</th>
-        <th>Institute</th>
-        <th>Board/University</th>
-        <th>Year</th>
-        <th>Percentage</th>
-      </tr>
-      <tr>
-        <td>B. Tech (Mechanical)</td>
-        <td>Sasi Institute of Technology and Engineering, Tadepalligudem.</td>
-        <td>JNTU-Kakinada</td>
-        <td>2019-2022</td>
-        <td>7.9 (CGPA)</td>
-      </tr>
-      <tr>
-        <td>Diploma</td>
-        <td>Sasi Institute of Technology and Engineering, Tadepalligudem.</td>
-        <td>State Board Of Technical Education & Training, Andhra Pradesh (SBTET)</td>
-        <td>2016-2019</td>
-        <td>79.49</td>
-      </tr>
-      <tr>
-        <td>SSC</td>
-        <td>Smt.Annapurna VidyaNiketan, Velivennu</td>
-        <td>State Board Of Secondary Education</td>
-        <td>2015-2016</td>
-        <td>9.5 (GPA)</td>
-      </tr>
-    </table>
+    <div style="overflow-x: auto;"> <!-- Add a container with horizontal scroll for small screens -->
+      <table>
+        <tr>
+          <th>Qualification</th>
+          <th>Institute</th>
+          <th>Board/University</th>
+          <th>Year</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>B. Tech (Mechanical)</td>
+          <td>Sasi Institute of Technology and Engineering, Tadepalligudem.</td>
+          <td>JNTU-Kakinada</td>
+          <td>2019-2022</td>
+          <td>7.9 (CGPA)</td>
+        </tr>
+        <tr>
+          <td>Diploma</td>
+          <td>Sasi Institute of Technology and Engineering, Tadepalligudem.</td>
+          <td>State Board Of Technical Education & Training, Andhra Pradesh (SBTET)</td>
+          <td>2016-2019</td>
+          <td>79.49</td>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>Smt.Annapurna VidyaNiketan, Velivennu</td>
+          <td>State Board Of Secondary Education</td>
+          <td>2015-2016</td>
+          <td>9.5 (GPA)</td>
+        </tr>
+      </table>
+    </div>
   </section>
 
   <section class="technical-skills">
