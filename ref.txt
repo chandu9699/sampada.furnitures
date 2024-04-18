@@ -1,3 +1,1 @@
-git repo for project: https://github.com/chandu9699/Bio_Medical_Implants.git
-data migration git repose: https://github.com/chandu9699/Data_Migration.git
-linkedin: https://www.linkedin.com/in/naidu-chandra-sekhar-054833263/
+#neet to write

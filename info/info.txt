@@ -84,8 +84,8 @@
         <nav id="nav">
     		<ul class="links">
         <li class="active"><a href="index.html">HOME</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="catlog.html">Catlog</a></li>
+        <li><a href="projects.html">Products</a></li>
+        <li><a href="contact.html">Catlog</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="contact.html">...</a></li>
         <li class="scrolling-text"><span>Mon to Friday: "9 AM to 8 PM"<!-- Visit our showroom for the best furniture!--></span></li>

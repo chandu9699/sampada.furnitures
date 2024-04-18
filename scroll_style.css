@@ -1,0 +1,15 @@
+/* Styling for the scrolling text */
+.scroll-text {
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.scroll-text span {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Animation for scrolling */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes marquee {
+    0% { transform: translateX(100%); } /* Start off-screen */
+    100% { transform: translateX(-100%); } /* End off-screen */
+}
