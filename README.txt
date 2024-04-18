@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Sampada FURNITURES
-
+dklfemfjewnfijewnf
 Welcome to my GitHub Website! This repository contains a collection of projects showcasing my skills and experience in various technologies and domains.
 
 ## About Me
