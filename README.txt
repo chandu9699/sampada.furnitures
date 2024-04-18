@@ -1,10 +1,10 @@
-# Portfolio
+# Sampada FURNITURES
 
-Welcome to my GitHub portfolio! This repository contains a collection of projects showcasing my skills and experience in various technologies and domains.
+Welcome to my GitHub Website! This repository contains a collection of projects showcasing my skills and experience in various technologies and domains.
 
 ## About Me
 
-I'm Chandra Sekhar Naidu, a passionate Mulesoft Developer with expertise in Mulesoft, Python, MySQL, Postman, and SOPA/RESTful services. I enjoy working on diverse projects and exploring new technologies to solve real-world problems.
+I'm Samapada Furnitures, a passionate Mulesoft Developer with expertise in Mulesoft, Python, MySQL, Postman, and SOPA/RESTful services. I enjoy working on diverse projects and exploring new technologies to solve real-world problems.
 
 ## Projects
 
